@@ -229,7 +229,7 @@ jobs:
       if: github.event_name != 'pull_request'
       run: | 
           for i in ./artifacts/*;do
-            gh release upload -R https://github.com/termux-user-repository/tur "0.1" $i
+            gh release upload -R https://github.com/nunneryTop/tur "0.1" $i
             echo "$i  uploaded"
           done
   trigeer:

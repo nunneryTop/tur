@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-- [ ] I understand [TUR package policy](https://github.com/termux-user-repository/tur/wiki/TUR-package-policy)
+- [ ] I understand [TUR package policy](https://github.com/nunneryTop/tur/wiki/TUR-package-policy)
 
 **Describe package:**
 Name:

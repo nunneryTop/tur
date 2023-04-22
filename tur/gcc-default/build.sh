@@ -1,4 +1,4 @@
-TERMUX_PKG_HOMEPAGE=https://github.com/termux-user-repository/tur
+TERMUX_PKG_HOMEPAGE=https://github.com/nunneryTop/tur
 TERMUX_PKG_DESCRIPTION="Use GNU Compiler Collections as default compiler suit"
 TERMUX_PKG_LICENSE="MIT"
 TERMUX_PKG_MAINTAINER="@termux-user-repository"

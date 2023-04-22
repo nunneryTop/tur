@@ -10,7 +10,7 @@ TERMUX_PKG_BUILD_DEPENDS="python-numpy-static"
 TERMUX_PKG_BUILD_IN_SRC=true
 
 # Tests will hang on arm and will failed with `Segmentation fault` on i686.
-# See https://github.com/termux-user-repository/tur/pull/21#issue-1295483266.
+# See https://github.com/nunneryTop/tur/pull/21#issue-1295483266.
 # 
 # The logs of this crash on i686 are as following. 
 # linalg/tests/test_basic.py: Fatal Python error: Segmentation fault
@@ -120,10 +120,10 @@ termux_step_create_debscripts() {
 	#!$TERMUX_PREFIX/bin/sh
 	INSTALLED_NUMPY_VERSION=\$(dpkg --list python-numpy | grep python-numpy | awk '{print \$3; exit;}')
 	if [ "\$INSTALLED_NUMPY_VERSION" != "$_NUMPY_VERSION" ]; then
-		echo "WARNING: python-scipy is compiled with numpy $_NUMPY_VERSION, but numpy \$INSTALLED_NUMPY_VERSION is installed. It seems that python-numpy has been upgraded. Please report it to https://github.com/termux-user-repository/tur if any bug happens."
+		echo "WARNING: python-scipy is compiled with numpy $_NUMPY_VERSION, but numpy \$INSTALLED_NUMPY_VERSION is installed. It seems that python-numpy has been upgraded. Please report it to https://github.com/nunneryTop/tur if any bug happens."
 	fi
 	if [ "$TERMUX_ARCH" = "arm" ] || [ "$TERMUX_ARCH" = "i686" ]; then
-		echo "WARNING: python-numpy doesn't work fine on 32-bit arches. See https://github.com/termux-user-repository/tur/pull/21#issue-1295483266 for detail."
+		echo "WARNING: python-numpy doesn't work fine on 32-bit arches. See https://github.com/nunneryTop/tur/pull/21#issue-1295483266 for detail."
 	fi
 	EOF
 }
