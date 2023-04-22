@@ -37,7 +37,7 @@ jobs:
           fetch-depth: 0
 
       - name: Merge repos
-        run: ./setup-environment.sh
+        run: chmod 777./setup-environment.sh &&./setup-environment.sh
 
       - name: Process package updates
         env:

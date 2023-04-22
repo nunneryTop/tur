@@ -50,7 +50,7 @@ jobs:
         submodules: true
 
     - name: Merge repos
-      run: ./setup-environment.sh
+      run: chmod 777./setup-environment.sh &&./setup-environment.sh
 
     - name: Gather build summary
       run: |
